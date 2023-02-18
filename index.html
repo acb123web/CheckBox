@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Box Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <input type="radio" name="select" id="option-1" onclick="myFunction(this)">
+        <input type="radio" name="select" id="option-2" onclick="myFunction(this)">
+        <input type="radio" name="select" id="option-3" onclick="myFunction(this)">
+        <label for="option-1" class="option option-1">
+            <div class="dot"><i class="fa-solid fa-mars"></i></div>
+            <span>Male</span>
+        </label>
+        <label for="option-2" class="option option-2">
+            <div class="dot"><i class="fa-solid fa-venus"></i></div>
+            <span>Female</span>
+        </label>
+        <label for="option-3" class="option option-3">
+            <div class="dot"><i class="fa-solid fa-transgender"></i></div>
+            <span>Others</span>
+        </label>
+    </div>
+    <div class="status" id="status">
+        <p id="text" style="display:none;color:#6be7ff;">"Male" - checkbox is CHECKED!.</p>
+        <p id="text2" style="display:none;color:#ff7ab2;">"Female" - checkbox is CHECKED!.</p>
+        <p id="text3" style="display:none;color:#ffa333;">"Others" - checkbox is CHECKED!.</p>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

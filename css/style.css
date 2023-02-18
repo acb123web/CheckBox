@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html,body{
+    display:grid;
+    height:100%;
+    place-items: center;
+    background: #222;
+}
+.wrapper{
+    display:inline-flex;
+    height:100px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding:20px 15px;
+}
+.wrapper .option{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0 10px;
+    border-radius:5px;
+    cursor:pointer;
+    padding:0 10px;
+    transition: all 0.3s ease;
+    box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+}
+.wrapper .option .dot{
+    font-size:22px;
+    color:#fff;
+    border-radius:50%;
+    position: relative;
+}
+#option-2:checked:checked~.option-2 .dot::before{
+    background: #ff7ab2;
+}
+#option-3:checked:checked~.option-3 .dot::before{
+    background: #ffa333;
+}
+input[type="radio"]{
+    display:none;
+}
+#option-1:checked:checked~.option-1{
+    border-color:#6be7ff;
+    background: #6be7ff;
+}
+#option-2:checked:checked~.option-2{
+    border-color:#ff7ab2;
+    background: #ff7ab2;
+}
+#option-3:checked:checked~.option-3{
+    border-color:#ffa333;
+    background: #ffa333;
+}
+.wrapper .option span{
+    font-size:18px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight:700;
+    padding-left:5px;
+}
+.status{
+    position:absolute;
+    top:20px;
+    right:10px;
+    padding:15px 25px;
+    border-radius:5px;
+    font-weight:bold;
+    display:none;
+    box-shadow:rgba(0,0,0,0.24)0px 3px 8px;
+}
